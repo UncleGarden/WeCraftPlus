@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - we craft plus</title>
+    {% else %}
+    <title>Welcome to we craft plus</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>CraftPlus: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
